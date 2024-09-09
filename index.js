@@ -24,7 +24,7 @@ app.use(bodyParser.json({ limit: "400mb" })); // To handle JSON data
 // Home route to display the form
 app.get("/", (req, res) => {
   res.send(`
-    <form action="/send-email" method="post">
+    <form action="/" method="post">
       <label for="name">Name:</label>
       <input type="text" name="name" placeholder="Enter name" required><br>
       <label for="email">Email:</label>
