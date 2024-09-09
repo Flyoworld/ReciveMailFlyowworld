@@ -98,7 +98,7 @@ app.post("/", (req, res) => {
       return res.status(500).json({ success: false, message: "Failed to send email." });
     } else {
       console.log("Email sent: " + info.response);
-      return null;
+      return res.redirect('https://flyoworld.com/'); 
       
     }
   });
