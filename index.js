@@ -39,9 +39,9 @@ app.get("/", (req, res) => {
 });
 
 // Route to handle email sending
-app.post("/send-email", (req, res) => {
+app.post("/", (req, res) => {
   const { name, email, subject, message } = req.body;
-  console.log(email);
+
   
   // Validate required fields
   if (!name || !email || !subject || !message) {
