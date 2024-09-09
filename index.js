@@ -98,7 +98,8 @@ app.post("/", (req, res) => {
       return res.status(500).json({ success: false, message: "Failed to send email." });
     } else {
       console.log("Email sent: " + info.response);
-      return res.status(200).json({ success: true, message: "Email sent successfully!" });
+      return null;
+      
     }
   });
 });
